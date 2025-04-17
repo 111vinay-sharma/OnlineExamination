@@ -42,7 +42,7 @@ function Result() {
   return (
     <div className="result-page">
       <div className="glass-card">
-        <h1 className="gradient-text">🎓 Quiz Result</h1>
+        <h1 className="gradient-text">🎓 Quiz Result new changes</h1>
         <h2>Hey {userName},</h2>
         <p className="message">{getMessage()}</p>
 
