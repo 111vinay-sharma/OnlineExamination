@@ -6,6 +6,7 @@ import Result from "../result/result";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function Quiz({ userName }) {
   const navigate = useNavigate();
@@ -134,6 +135,11 @@ function Quiz({ userName }) {
 
   return (
     <section>
+      <Helmet>
+        <title>Quiz App - Quiz</title>
+        <meta name="description" content="Test your knowledge with our quiz" />
+        
+      </Helmet>
       <div className="container">
         <h2 className="greeting">
           👋 Hey <span className="username">{userName}</span>, ready to test

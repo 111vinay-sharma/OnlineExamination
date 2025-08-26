@@ -4,6 +4,7 @@ import "../front page/front-page.css";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import { ClipLoader } from "react-spinners";
+import { Helmet } from "react-helmet-async";
 
 function FrontPage({ setUserName }) {
   const [name, setName] = useState("");
@@ -23,6 +24,10 @@ function FrontPage({ setUserName }) {
 
   return (
     <div className="frontpage">
+      <Helmet>
+        <title>Quiz App - Login</title>
+        <meta name="description" content="Login to start the quiz" />
+      </Helmet>
       <div className="form_container">
         <div className="form_image">
           <img src="images/form-img.jpg" alt="Form Illustration" />
