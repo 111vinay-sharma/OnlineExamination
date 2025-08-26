@@ -13,14 +13,15 @@ function Result() {
     if (data) {
       setResult(data);
 
-      // Trigger confetti for good scores
- 
+      const scorePercent = (data.score / data.totalQuestions) * 100;
+      if (scorePercent >= 10) {
+        // Only show confetti for good scores
         confetti({
           particleCount: 300,
           spread: 100,
           origin: { y: 0.6 },
         });
-      
+      }
     } else {
       navigate("/");
     }
@@ -41,8 +42,8 @@ function Result() {
 
   return (
     <div className="result-page">
-      <div className="glass-card">
-        <h1 className="gradient-text">🎓 Quiz Result new changes</h1>
+      <div className={`glass-card ${percentage < 40 ? "shake" : "good-score"}`}>
+        <h1 className="gradient-text">🎓 Quiz Result</h1>
         <h2>Hey {userName},</h2>
         <p className="message">{getMessage()}</p>
 
@@ -80,7 +81,7 @@ function Result() {
           “Success is the sum of small efforts, repeated day in and day out.” 💡
         </blockquote>
 
-        <button className="retake-btn" onClick={() => navigate("/")}>
+        <button className="retake-btn" onClick={() => navigate("/quiz")}>
           🔁 Retake Quiz
         </button>
       </div>

@@ -104,7 +104,7 @@ function Quiz({ userName }) {
     }
   }
 
-  function handleOnchnage(option) {
+  function handleOnchange(option) {
     setelectoptions(option);
     const updatedAns = [...selectAns];
     updatedAns[current] = option;
@@ -152,7 +152,7 @@ function Quiz({ userName }) {
                   type="radio"
                   name="option"
                   checked={selectoptions === option}
-                  onChange={() => handleOnchnage(option)}
+                  onChange={() => handleOnchange(option)}
                 />
                 {option}
               </label>

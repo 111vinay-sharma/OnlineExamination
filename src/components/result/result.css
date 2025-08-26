@@ -116,3 +116,33 @@
     }
   }
   
+  /* Fade-in effect */
+.result-page {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Shake animation for low scores */
+.shake {
+  animation: shakeAnim 0.5s ease-in-out;
+  background: rgba(255, 210, 210, 0.15);
+  border: 1px solid #ffaaaa;
+}
+
+@keyframes shakeAnim {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Optional glowing border for good scores */
+.good-score {
+  box-shadow: 0 0 10px #00c6ff88, 0 0 20px #0072ff66;
+  transition: box-shadow 0.3s ease;
+}

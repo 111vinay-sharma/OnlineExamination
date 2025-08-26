@@ -58,6 +58,65 @@
     "question": "What is the capital of Japan?",
     "options": ["Kyoto", "Osaka", "Tokyo", "Hiroshima"],
     "answer": "Tokyo"
-  }
-  
-]
+  },
+    {
+      "questionNo": 11,
+      "question": "What is the freezing point of water in Celsius?",
+      "options": ["0", "32", "100", "-10"],
+      "answer": "0"
+    },
+    {
+      "questionNo": 12,
+      "question": "Which gas do plants absorb from the atmosphere?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Helium"],
+      "answer": "Carbon Dioxide"
+    },
+    {
+      "questionNo": 13,
+      "question": "What is the largest mammal in the world?",
+      "options": ["Elephant", "Giraffe", "Blue Whale", "Hippopotamus"],
+      "answer": "Blue Whale"
+    },
+    {
+      "questionNo": 14,
+      "question": "Who discovered gravity?",
+      "options": ["Albert Einstein", "Galileo Galilei", "Isaac Newton", "Nikola Tesla"],
+      "answer": "Isaac Newton"
+    },
+    {
+      "questionNo": 15,
+      "question": "Which language is primarily spoken in Brazil?",
+      "options": ["Spanish", "Portuguese", "English", "French"],
+      "answer": "Portuguese"
+    },
+    {
+      "questionNo": 16,
+      "question": "What does HTTP stand for?",
+      "options": ["Hyper Text Transfer Protocol", "High Text Transfer Protocol", "Hyperlink Transfer Protocol", "Hyper Tool Transfer Protocol"],
+      "answer": "Hyper Text Transfer Protocol"
+    },
+    {
+      "questionNo": 17,
+      "question": "Which organ is responsible for pumping blood in the human body?",
+      "options": ["Lungs", "Brain", "Heart", "Liver"],
+      "answer": "Heart"
+    },
+    {
+      "questionNo": 18,
+      "question": "How many continents are there on Earth?",
+      "options": ["5", "6", "7", "8"],
+      "answer": "7"
+    },
+    {
+      "questionNo": 19,
+      "question": "Which instrument is used to measure temperature?",
+      "options": ["Barometer", "Thermometer", "Hygrometer", "Altimeter"],
+      "answer": "Thermometer"
+    },
+    {
+      "questionNo": 20,
+      "question": "What is the main language used for Android app development?",
+      "options": ["Swift", "Kotlin", "Ruby", "PHP"],
+      "answer": "Kotlin"
+    }
+  ]
